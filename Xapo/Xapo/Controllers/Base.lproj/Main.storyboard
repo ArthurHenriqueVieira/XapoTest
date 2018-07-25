@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v9d-eL-Gn7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Github Trends-->
+        <scene sceneID="RoS-cn-0yH">
+            <objects>
+                <viewController id="XCB-Cc-AHb" customClass="TrendsViewController" customModule="Xapo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zbC-oL-Fy0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MBF-wq-VMY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="Xvp-Lz-KGY">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="XCB-Cc-AHb" id="HMK-X4-Dt4"/>
+                                    </connections>
+                                </searchBar>
+                                <connections>
+                                    <outlet property="dataSource" destination="XCB-Cc-AHb" id="AE4-3b-7of"/>
+                                    <outlet property="delegate" destination="XCB-Cc-AHb" id="nFZ-wu-oiQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cpi-7a-GuC" firstAttribute="bottom" secondItem="MBF-wq-VMY" secondAttribute="bottom" id="NXd-TY-BV7"/>
+                            <constraint firstItem="cpi-7a-GuC" firstAttribute="trailing" secondItem="MBF-wq-VMY" secondAttribute="trailing" id="Rww-Wd-gty"/>
+                            <constraint firstItem="MBF-wq-VMY" firstAttribute="top" secondItem="cpi-7a-GuC" secondAttribute="top" id="TXR-Mu-MnA"/>
+                            <constraint firstItem="MBF-wq-VMY" firstAttribute="leading" secondItem="cpi-7a-GuC" secondAttribute="leading" id="wtc-rQ-7nX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cpi-7a-GuC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Github Trends" id="BWc-9n-hT7">
+                        <barButtonItem key="backBarButtonItem" title="back" id="vJP-K2-3gy"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="Xvp-Lz-KGY" id="Cy2-M8-9Wn"/>
+                        <outlet property="tableView" destination="MBF-wq-VMY" id="n0i-Lc-Zuj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIk-hO-Rew" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="-20"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vwq-8W-7Fv">
+            <objects>
+                <navigationController id="v9d-eL-Gn7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="4ki-Cs-Lae">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XCB-Cc-AHb" kind="relationship" relationship="rootViewController" id="6fe-rR-xa8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wHL-OM-yIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-393" y="-19"/>
+        </scene>
+    </scenes>
+</document>
