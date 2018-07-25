@@ -40,6 +40,12 @@ class TrendsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? ProjectViewController {
+            vc.project = project
+        }
+    }
+    
     func update() {
         refreshControl.beginRefreshing()
         rest.getAll(success: { projects in
@@ -88,6 +94,11 @@ class TrendsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.forkImageView.tintColor = UIColor.lightGray
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        project = searchedProjects[indexPath.row]
+        performSegue(withIdentifier: "projectSegue", sender: nil)
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

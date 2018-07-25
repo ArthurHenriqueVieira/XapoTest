@@ -50,6 +50,7 @@
                     <connections>
                         <outlet property="searchBar" destination="Xvp-Lz-KGY" id="Cy2-M8-9Wn"/>
                         <outlet property="tableView" destination="MBF-wq-VMY" id="n0i-Lc-Zuj"/>
+                        <segue destination="RCZ-N7-kb7" kind="show" identifier="projectSegue" id="Xqz-cI-q8f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIk-hO-Rew" sceneMemberID="firstResponder"/>
@@ -80,11 +81,11 @@
             <objects>
                 <viewController title="sadsda" id="RCZ-N7-kb7" customClass="ProjectViewController" customModule="XapoTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RCG-5x-a5S">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Viz-LS-CAn">
-                                <rect key="frame" x="0.0" y="20" width="375" height="263.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="263.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TEC-2l-mae">
                                         <rect key="frame" x="137" y="16" width="100" height="100"/>
@@ -134,7 +135,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nei-xQ-YCI">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5u-Ez-lzv">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="263.5"/>
