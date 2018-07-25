@@ -20,6 +20,7 @@
 		2131F62E21081A5B00889A2D /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131F62B21081A5B00889A2D /* Owner.swift */; };
 		2131F62F21081A5B00889A2D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131F62C21081A5B00889A2D /* Project.swift */; };
 		2131F63121081A6E00889A2D /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131F63021081A6E00889A2D /* DateExt.swift */; };
+		2131F63521081B9B00889A2D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131F63421081B9B00889A2D /* View.swift */; };
 		8E069ED0BF954F8311E6849F /* Pods_Xapo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C4B79B84CF76481C26CAAF /* Pods_Xapo.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		2131F62B21081A5B00889A2D /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		2131F62C21081A5B00889A2D /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		2131F63021081A6E00889A2D /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		2131F63421081B9B00889A2D /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		27D989162D234AB3F0665FC2 /* Pods-Xapo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xapo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xapo/Pods-Xapo.debug.xcconfig"; sourceTree = "<group>"; };
 		643F0B8CF4D793973C52862A /* Pods-Xapo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xapo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Xapo/Pods-Xapo.release.xcconfig"; sourceTree = "<group>"; };
 		95C4B79B84CF76481C26CAAF /* Pods_Xapo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xapo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 		2131F62921081A4C00889A2D /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				2131F63421081B9B00889A2D /* View.swift */,
 				2131F63021081A6E00889A2D /* DateExt.swift */,
 				2131F62B21081A5B00889A2D /* Owner.swift */,
 				2131F62C21081A5B00889A2D /* Project.swift */,
@@ -263,6 +266,7 @@
 			files = (
 				2131F62821081A3F00889A2D /* ProjectTableViewCell.swift in Sources */,
 				2131F61C2108196500889A2D /* TrendsViewController.swift in Sources */,
+				2131F63521081B9B00889A2D /* View.swift in Sources */,
 				2131F62E21081A5B00889A2D /* Owner.swift in Sources */,
 				2131F6092108188D00889A2D /* AppDelegate.swift in Sources */,
 				2131F622210819D200889A2D /* RestApi.swift in Sources */,
